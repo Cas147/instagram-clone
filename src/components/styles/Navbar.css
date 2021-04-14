@@ -1,0 +1,18 @@
+.search--Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searcher{
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    padding: 7px 20px;
+    border-radius: 5px;
+}
+
+@media (max-width: 620px){
+    .search--Container{
+        display: none;
+    }
+}

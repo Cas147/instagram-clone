@@ -1,0 +1,27 @@
+.container{
+    max-width: 630px;
+    height: 84px;
+    background-color: #fff;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 3px;
+    margin-bottom: 24px;
+    margin-top: 0;
+    padding: 16px 30px;
+}
+
+.img-history{
+    padding: 0px 0px;
+    border-radius: 50%;
+    border: 1px solid conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
+}
+
+.userName-story{
+    padding-left: 15px;
+    text-decoration: none;
+    font-size: 0.8em;
+    color:#262626 ;
+}
+
+.link-story{
+    text-decoration: none;
+}
