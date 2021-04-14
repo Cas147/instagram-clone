@@ -11,7 +11,6 @@ export default function Home(){
                 <Feed></Feed>
             </div>
             <div>
-
             </div>
         </div>
     )
