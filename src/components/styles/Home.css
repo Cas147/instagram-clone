@@ -7,4 +7,8 @@
     .suggest-section{
        display: none;
     }
+    .feed-section{
+        margin: 0 auto;
+    }
 }
+
