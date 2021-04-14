@@ -1,12 +1,12 @@
 .container{
-    max-width: 630px;
+    max-width: 500px;
     height: 84px;
     background-color: #fff;
     border: 1px solid rgba(var(--b6a,219,219,219),1);
     border-radius: 3px;
     margin-bottom: 24px;
-    margin-top: 0;
     padding: 16px 30px;
+    margin-left: 200px;
 }
 
 .img-history{
@@ -24,4 +24,16 @@
 
 .link-story{
     text-decoration: none;
+}
+
+@media (max-width: 620px){
+    .container{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 820px){
+    .container{
+        margin: 20px auto;
+    }
 }

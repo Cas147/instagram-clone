@@ -35,14 +35,14 @@ export default function Histories(){
         infinite: false,
         arrow:true,
         speed: 1000,
-        slidesToShow: 8,
+        slidesToShow: 7,
         slidesToScroll: 4,
         className:"slides",
         responsive:[
             {
               breakpoint: 1024,
               settings: {
-                slidesToShow: 8,
+                slidesToShow: 7,
                 slidesToScroll: 4,
                 infinite: false,
                 dots: false
