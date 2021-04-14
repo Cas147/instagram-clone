@@ -11,6 +11,7 @@
     border-radius: 5px;
 }
 
+
 @media (max-width: 620px){
     .search--Container{
         display: none;

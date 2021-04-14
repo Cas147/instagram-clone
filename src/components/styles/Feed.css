@@ -5,19 +5,20 @@ Ul{
 }
 
 .feed-container{
-    max-width: 560px;
+    max-width: 600px;
     height: auto;
     background-color: #fff;
     border: 1px solid rgba(var(--b6a,219,219,219),1);
     border-radius: 3px;
-    margin-bottom: 24px;
+    margin-bottom: 60px;
     margin-left: 200px;
 }
 
 .img-feed-info{
     padding: 0px 0px;
     border-radius: 50%;
-    border: 1px solid conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
+    background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
+
 }
 
 .icon{

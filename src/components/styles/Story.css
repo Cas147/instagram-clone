@@ -1,5 +1,5 @@
 .container{
-    max-width: 500px;
+    max-width: 540px;
     height: 84px;
     background-color: #fff;
     border: 1px solid rgba(var(--b6a,219,219,219),1);
@@ -12,7 +12,7 @@
 .img-history{
     padding: 0px 0px;
     border-radius: 50%;
-    border: 1px solid conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 }
 
 .userName-story{

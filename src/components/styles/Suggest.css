@@ -1,0 +1,78 @@
+.suggest-container{
+    margin-left: 50px;
+    width: 300px;
+    height: auto;
+    position: fixed;
+}
+
+.myInfo-container{
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.User-img{
+    width: 50px;
+    height: 50px;
+}
+
+.user-info-container{
+    margin-left: 30px;
+    width: 200px;
+}
+.user-name-link{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: small;
+}
+
+.user-descriptiom{
+    color: gray;
+    margin-top: 5px;
+    font-size: 0.8em;
+}
+
+.switch-button{
+    color: #0f9bf7;
+    height: auto;
+    padding: 0 0;
+    background-color: #fafafa;
+    border: none;
+    margin-left: 50px;
+
+}
+.suggestion-to-you{
+    display: flex;
+}
+.suggestion-to-you p{
+    font-size: medium;
+    color: gray;
+    width: 100%;
+}
+
+.suggest-link{
+    text-decoration: none;
+    color: black;
+    width: 50px;
+    font-size: small;
+    font-weight: 600;
+    justify-content: end;
+    padding-top: 15px;
+}
+
+.Suggest-img{
+    width: 30px;
+    height: 30px;
+}
+.user-suggest-link{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: small;
+}
+.user-suggest-container{
+    margin-left: 15px;
+    width: 200px;
+}
+

@@ -1,0 +1,10 @@
+.Home-container{
+    margin-top: 30px;
+    display: flex;
+}
+
+@media (max-width: 820px){
+    .suggest-section{
+       display: none;
+    }
+}

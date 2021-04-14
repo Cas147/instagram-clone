@@ -10,22 +10,22 @@ const histories=[
     {id:1,userName:'user1', photo:'https://picsum.photos/60/60'},
     {id:2,userName:'user2', photo:'https://picsum.photos/60/60'},
     {id:3,userName:'user3', photo:'https://picsum.photos/60/60'},
-    {id:4,userName:'user5', photo:'https://picsum.photos/60/60'},
-    {id:5,userName:'user6', photo:'https://picsum.photos/60/60'},
-    {id:6,userName:'user7', photo:'https://picsum.photos/60/60'},
-    {id:7,userName:'user8', photo:'https://picsum.photos/60/60'},
-    {id:8,userName:'user9', photo:'https://picsum.photos/60/60'},
-    {id:9,userName:'user10', photo:'https://picsum.photos/60/60'},
-    {id:10,userName:'user11', photo:'https://picsum.photos/60/60'},
-    {id:11,userName:'user12', photo:'https://picsum.photos/60/60'},
-    {id:12,userName:'user13', photo:'https://picsum.photos/60/60'},
-    {id:13,userName:'user14', photo:'https://picsum.photos/60/60'},
-    {id:14,userName:'user15', photo:'https://picsum.photos/60/60'},
-    {id:15,userName:'user16', photo:'https://picsum.photos/60/60'},
-    {id:16,userName:'user17', photo:'https://picsum.photos/60/60'},
-    {id:17,userName:'user18', photo:'https://picsum.photos/60/60'},
-    {id:18,userName:'user19', photo:'https://picsum.photos/60/60'},
-    {id:19,userName:'user20', photo:'https://picsum.photos/60/60'},
+    {id:4,userName:'user4', photo:'https://picsum.photos/60/60'},
+    {id:5,userName:'user5', photo:'https://picsum.photos/60/60'},
+    {id:6,userName:'user6', photo:'https://picsum.photos/60/60'},
+    {id:7,userName:'user7', photo:'https://picsum.photos/60/60'},
+    {id:8,userName:'user8', photo:'https://picsum.photos/60/60'},
+    {id:9,userName:'user9', photo:'https://picsum.photos/60/60'},
+    {id:10,userName:'user10', photo:'https://picsum.photos/60/60'},
+    {id:11,userName:'user11', photo:'https://picsum.photos/60/60'},
+    {id:12,userName:'user12', photo:'https://picsum.photos/60/60'},
+    {id:13,userName:'user13', photo:'https://picsum.photos/60/60'},
+    {id:14,userName:'user14', photo:'https://picsum.photos/60/60'},
+    {id:15,userName:'user15', photo:'https://picsum.photos/60/60'},
+    {id:16,userName:'user16', photo:'https://picsum.photos/60/60'},
+    {id:17,userName:'user17', photo:'https://picsum.photos/60/60'},
+    {id:18,userName:'user18', photo:'https://picsum.photos/60/60'},
+    {id:19,userName:'user19', photo:'https://picsum.photos/60/60'},
 
 
 ]
@@ -59,7 +59,7 @@ export default function Histories(){
               {
                 breakpoint: 480,
                 settings: {
-                  slidesToShow: 4,
+                  slidesToShow: 5,
                   slidesToScroll: 4
                 }
               },]
@@ -69,7 +69,7 @@ export default function Histories(){
             <Slider {...settings} >
                 {histories.map(item=> {
                     return (
-                        <div>
+                        <div >
                             <div key={item.id} className="image-container">
                              <Link className="link-story">
                                 <img className="img-history" src={item.photo} alt="histories" />

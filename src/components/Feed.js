@@ -48,7 +48,7 @@ export default function Feed(){
                         </Link>
                     </div>
                     <div>
-                        <img className="img-feed-post" src="https://picsum.photos/400" alt="histories" />
+                        <img className="img-feed-post" src={item.download_url} alt="histories" />
                     </div>
                     <div className="section-icons">
                         <button className="button-section">
@@ -68,7 +68,7 @@ export default function Feed(){
                         <p className="number-likes">{item.height} Likes</p>
                     </div>
                     <div>
-                        <p className="Description-post"> <b>{item.author}</b>{item.download_url}</p>
+                        <p className="Description-post"> <b>{item.author}  </b>{item.download_url}</p>
                     </div>
                     <div className="comment-container">
                         <button className="emoticon-button">

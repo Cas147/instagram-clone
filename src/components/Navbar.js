@@ -24,7 +24,9 @@ const useStyles = makeStyles((theme) => ({
       height: '54px',
       backgroundColor:'white',
       border:'1px solid #dbdbdb',
-      display:'flex'
+      display:'flex',
+      position:'sticky',
+      top:0,
     },
     instagramLogo:{
         width:'7em',
