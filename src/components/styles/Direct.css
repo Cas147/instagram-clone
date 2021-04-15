@@ -6,6 +6,7 @@
     border: 1px solid #dbdbdb;
     border-radius: 3px;
     display: flex;
+    margin-bottom: 0;
 }
 
 .message-user-container{
@@ -90,3 +91,45 @@
     margin: 0px;
 }
 
+.text-message-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-img-container{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 2px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-img{
+    width: 60px;
+    height: 60px;
+}
+
+.text-message-container p{
+    font-size: 1.3em;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+.text-message-container h5{
+    margin-top: 0px;
+}
+
+.text-message-container button{
+    border: 1px solid transparent;
+    background-color: #0095f6;
+    padding: 6px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
