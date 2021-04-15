@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     paper: {
-      Width: '100%',
+      Width: '100vw',
       height: '54px',
       backgroundColor:'white',
       border:'1px solid #dbdbdb',
@@ -60,42 +60,42 @@ export default function Navbar() {
     const classes = useStyles();
 
     return (
-        <div className={classes.paper}>
-            <div className={classes.logoContainer}>
-                <Link  to='#'>
-                    <img className={classes.instagramLogo} src={instagramLogo} alt="Logo"></img>
-                </Link>
+            <div className={classes.paper}>
+                <div className={classes.logoContainer}>
+                    <Link  to='/home'>
+                        <img className={classes.instagramLogo} src={instagramLogo} alt="Logo"></img>
+                    </Link>
+                </div>
+                <div className="search--Container">
+                    <FormControl>
+                    <input className='searcher'
+                        id="outlined-basic"
+                        variant="outlined"
+                        name="firstName"
+                        autoComplete='off'
+                        placeholder='Search'
+                        variant="outlined"
+            />
+                    </FormControl>
+                </div>
+                <div className={classes.IconsContainer}>
+                    <Link to='/home'>
+                        <img className={classes.Icons} src={homeIocn} alt="Home"></img>
+                    </Link>
+                    <Link to='/direct/inbox/'>
+                        <img className={classes.Icons} src={messageIocn} alt="Messages"></img>
+                    </Link>
+                    <Link to='#'>
+                        <img className={classes.Icons} src={heartIcon} alt="Notifications"></img>
+                    </Link>
+                    <Link to='#'>
+                        <img className={classes.Icons} src={discoverIocn} alt="Discover-people"></img>
+                    </Link>
+                    <Link to='#'>
+                        <img className={classes.Icons} src={userIocn} alt="Discover-people"></img>
+                    </Link>
+                </div>
             </div>
-            <div className="search--Container">
-                <FormControl>
-                <input className='searcher'
-                    id="outlined-basic"
-                    variant="outlined"
-                    name="firstName"
-                    autoComplete='off'
-                    placeholder='Search'
-                    variant="outlined"
-        />
-                </FormControl>
-            </div>
-            <div className={classes.IconsContainer}>
-                <Link to='#'>
-                    <img className={classes.Icons} src={homeIocn} alt="Home"></img>
-                </Link>
-                <Link to='#'>
-                    <img className={classes.Icons} src={messageIocn} alt="Messages"></img>
-                </Link>
-                <Link to='#'>
-                    <img className={classes.Icons} src={heartIcon} alt="Notifications"></img>
-                </Link>
-                <Link to='#'>
-                    <img className={classes.Icons} src={discoverIocn} alt="Discover-people"></img>
-                </Link>
-                <Link to='#'>
-                    <img className={classes.Icons} src={userIocn} alt="Discover-people"></img>
-                </Link>
-            </div>
-        </div>
     )
 }
 

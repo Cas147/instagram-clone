@@ -11,7 +11,7 @@ Ul{
     border: 1px solid rgba(var(--b6a,219,219,219),1);
     border-radius: 3px;
     margin-bottom: 60px;
-    margin-left: 200px;
+    margin:  30px auto;
 }
 
 .img-feed-info{

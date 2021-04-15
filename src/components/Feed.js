@@ -28,7 +28,7 @@ export default function Feed(){
 
       fetchData();
     }, [setList]);
-    console.log(list)
+
     return(
         <ul>
             {list.map(item => (
@@ -40,7 +40,7 @@ export default function Feed(){
                                 <img className="img-feed-info" src='https://picsum.photos/30/30' alt="stories" />
                             </Link>
                             <Link className="link-user">
-                                <p className="user-name-post">{item.author}</p>
+                                <p className="user-name-post">{item.author.trim()}</p>
                             </Link>
                         </div>
                         <Link className="icon-more" to="#">

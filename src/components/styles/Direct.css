@@ -1,0 +1,92 @@
+.message-container{
+    width: 933px;
+    background-color: #fff;
+    height: 561px;
+    margin: 20px auto;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    display: flex;
+}
+
+.message-user-container{
+    width: 353px;
+    height: 100%;
+}
+.message-user{
+    display: flex;
+    width: 313px;
+    height: 59px;
+    padding: 0 20px;
+    align-items: center;
+    border-bottom:1px solid #dbdbdb ;
+    border-right:1px solid #dbdbdb ;
+}
+.angle-down{
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    border: none;
+    margin:  0 auto;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.angle-down img{
+    width: 30px;
+    height: 30px;
+}
+
+.pencil-button{
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    border: none;
+    justify-self: end;
+}
+
+.pencil-button img{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.friends-list-container{
+    width: 100%;
+    height: 500px;
+    border-right:1px solid #dbdbdb ;
+    overflow: auto;
+}
+
+.friends-list{
+    padding: 8px 20px;
+    width: 100%;
+    display: flex;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.friends-list:hover{
+    background-color:#f7f7f7  ;
+}
+
+.friends-img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+.name-friend{
+    font-size: small;
+    margin-bottom: 2px;
+}
+
+.state-friend{
+    font-size: small;
+    color: gray;
+    margin: 0px;
+}
+
