@@ -11,6 +11,7 @@ import discoverIocn from '../images/discover-icon.png';
 import heartIcon from '../images/heart-icon.png';
 import userIocn from '../images/User-png.png';
 
+import Profile from './Profile'
 import Likes from './Likes'
 import './styles/Navbar.css'
 
@@ -65,6 +66,7 @@ export default function Navbar() {
     const classes = useStyles();
 
     const [buttonClicked, setButtonClicked] = useState(false);
+    const [ProfileClicked, setProfileClicked] = useState(false);
 
     const handleButtonClick = () => {
         if(buttonClicked===false){
@@ -72,6 +74,16 @@ export default function Navbar() {
         }
         if(buttonClicked===true){
             setButtonClicked(false)
+        }
+
+    }
+
+    const handleProfileButtonClick = () => {
+        if(ProfileClicked===false){
+            setProfileClicked(true)
+        }
+        if(ProfileClicked===true){
+            setProfileClicked(false)
         }
 
     }
@@ -121,13 +133,17 @@ export default function Navbar() {
                         <img className={classes.Icons} src={heartIcon} alt="Notifications"></img>
                     </button>
 
-                    <button className="button-navBar">
+                    <button className="button-navBar" onClick={handleProfileButtonClick}>
                         <img className={classes.Icons} src={userIocn} alt="Discover-people"></img>
                     </button>
                 </div>
             </div>
                 <div  className="likes-nav-container" >
                     {  buttonClicked ?  <Likes></Likes> : null}
+                    {/* <Likes></Likes> */}
+                </div>
+                <div  >
+                    {  ProfileClicked ?  <Profile></Profile> : null}
                     {/* <Likes></Likes> */}
                 </div>
         </div>
