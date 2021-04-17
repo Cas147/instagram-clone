@@ -1,4 +1,4 @@
-import React from  'react';
+import React,{useState,useEffect,useRef} from  'react';
 import {Link} from 'react-router-dom'
 
 import { makeStyles } from '@material-ui/core/styles';
@@ -11,6 +11,7 @@ import discoverIocn from '../images/discover-icon.png';
 import heartIcon from '../images/heart-icon.png';
 import userIocn from '../images/User-png.png';
 
+import Likes from './Likes'
 import './styles/Navbar.css'
 
 
@@ -19,14 +20,17 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
     },
 
+    container:{
+        position:'sticky',
+        top:0,
+    },
+
     paper: {
-      Width: '100vw',
       height: '54px',
       backgroundColor:'white',
       border:'1px solid #dbdbdb',
       display:'flex',
-      position:'sticky',
-      top:0,
+
     },
     instagramLogo:{
         width:'7em',
@@ -56,13 +60,38 @@ const useStyles = makeStyles((theme) => ({
     }
   }));
 
+
 export default function Navbar() {
     const classes = useStyles();
 
+    const [buttonClicked, setButtonClicked] = useState(false);
+
+    const handleButtonClick = () => {
+        if(buttonClicked===false){
+            setButtonClicked(true)
+        }
+        if(buttonClicked===true){
+            setButtonClicked(false)
+        }
+
+    }
+    let likeRef=useRef();
+ /*    const [buttonClicked, setButtonClicked] = useState(true);
+
+    useEffect(()=>{
+        document.addEventListener("mousedown",(event)=>{
+            if(!likeRef.current.contains(event.target)){
+                setButtonClicked(false)
+            }
+        });
+    }); */
+
+
     return (
-            <div className={classes.paper}>
+        <div className={classes.container}>
+            <div className={classes.paper} width={1}>
                 <div className={classes.logoContainer}>
-                    <Link  to='/home'>
+                    <Link  to='/'>
                         <img className={classes.instagramLogo} src={instagramLogo} alt="Logo"></img>
                     </Link>
                 </div>
@@ -79,23 +108,30 @@ export default function Navbar() {
                     </FormControl>
                 </div>
                 <div className={classes.IconsContainer}>
-                    <Link to='/home'>
+                    <Link to='/'>
                         <img className={classes.Icons} src={homeIocn} alt="Home"></img>
                     </Link>
                     <Link to='/direct/inbox/'>
                         <img className={classes.Icons} src={messageIocn} alt="Messages"></img>
                     </Link>
-                    <Link to='#'>
-                        <img className={classes.Icons} src={heartIcon} alt="Notifications"></img>
-                    </Link>
-                    <Link to='#'>
+                    <Link to='/explore'>
                         <img className={classes.Icons} src={discoverIocn} alt="Discover-people"></img>
                     </Link>
-                    <Link to='#'>
+                    <button className="button-heart"  onClick={handleButtonClick}>
+                        <img className={classes.Icons} src={heartIcon} alt="Notifications"></img>
+                    </button>
+
+                    <button className="button-navBar">
                         <img className={classes.Icons} src={userIocn} alt="Discover-people"></img>
-                    </Link>
+                    </button>
                 </div>
             </div>
+                <div  className="likes-nav-container" >
+                    {  buttonClicked ?  <Likes></Likes> : null}
+                    {/* <Likes></Likes> */}
+                </div>
+        </div>
+
     )
 }
 

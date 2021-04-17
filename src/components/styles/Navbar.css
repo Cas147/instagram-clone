@@ -11,8 +11,19 @@
     border-radius: 5px;
 }
 
+.button-navBar{
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+}
 
-
+.button-heart{
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+}
 
 @media (max-width: 620px){
     .search--Container{
